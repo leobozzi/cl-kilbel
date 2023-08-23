@@ -37,7 +37,7 @@
 
     ],
     'data': [
-
+        'views/hr_leave_type_view.xml',
     ],
     'test': [
     ],

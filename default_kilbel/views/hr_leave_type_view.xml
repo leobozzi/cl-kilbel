@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Hr Leave Type Form view -->
+    <record model="ir.ui.view" id="custom_hr_leave_type_form_view">
+        <field name="name">customt_hr_leave_type_form_view</field>
+        <field name="model">hr.leave.type</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="allocation_validation_type" position="after">
+                <field name="ref" />
+            </field>
+        </field>
+    </record>
+
+    <!-- Hr Leave Type Tree view -->
+    <record model="ir.ui.view" id="custom_hr_leave_type_tree_view">
+        <field name="name">customt_hr_leave_type_tree_view</field>
+        <field name="model">hr.leave.type</field>
+        <field name="inherit_id" ref="hr_holidays.view_holiday_status_normal_tree" />
+        <field name="arch" type="xml">
+            <field name="employee_requests" position="after">
+                <field name="ref" optional="show"/>
+            </field>
+        </field>
+    </record>
+</odoo>
