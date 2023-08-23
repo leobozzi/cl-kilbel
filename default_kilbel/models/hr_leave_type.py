@@ -14,5 +14,5 @@ class HrLeaveType(models.Model):
             ('remunerative', 'Remunerative'),
             ('non-remunerative', 'Non Remunerative')],
         string="Leave Type",
-        default='remunerative',
+        #default='remunerative',
     )

@@ -31,7 +31,8 @@
         'board',
         'calendar',
         'website',
-        'hr_holiday',
+        'hr',
+        'hr_holidays',
         
 
     ],
