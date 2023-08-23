@@ -31,7 +31,6 @@
         'board',
         'calendar',
         'website',
-        'base_ux',
         'hr_holiday',
         
 
