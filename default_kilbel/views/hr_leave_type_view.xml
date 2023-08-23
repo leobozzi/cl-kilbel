@@ -4,7 +4,7 @@
     <record model="ir.ui.view" id="custom_hr_leave_type_form_view">
         <field name="name">customt_hr_leave_type_form_view</field>
         <field name="model">hr.leave.type</field>
-        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="inherit_id" ref="hr_holidays.view_holiday_status_normal_form" />
         <field name="arch" type="xml">
             <field name="allocation_validation_type" position="after">
                 <field name="ref" />
