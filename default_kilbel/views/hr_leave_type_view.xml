@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form" />
         <field name="arch" type="xml">
             <field name="allocation_validation_type" position="after">
-                <field name="remunerative_leave_type" />
+                <field name="leave_category" />
             </field>
         </field>
     </record>
@@ -19,7 +19,7 @@
         <field name="inherit_id" ref="hr_holidays.view_holiday_status_normal_tree" />
         <field name="arch" type="xml">
             <field name="employee_requests" position="after">
-                <field name="remunerative_leave_type" optional="hide"/>
+                <field name="leave_category" optional="hide"/>
             </field>
         </field>
     </record>

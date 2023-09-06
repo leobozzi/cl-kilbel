@@ -7,8 +7,25 @@
         <field name="inherit_id" ref="hr_holidays.hr_leave_report_tree" />
         <field name="arch" type="xml">
             <field name="state" position="before">
-                <field name="remunerative_leave_type" optional="hide"/>
+                <field name="leave_category" optional="hide"/>
             </field>
+        </field>
+    </record>
+
+     <!-- Hr Leave Report Search view -->
+     <record model="ir.ui.view" id="custom_hr_leave_report_search_view">
+        <field name="name">custom_hr_leave_report_search_view</field>
+        <field name="model">hr.leave.report</field>
+        <field name="inherit_id" ref="hr_holidays.view_hr_holidays_filter_report" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position='after'>
+                <field name="leave_category" />
+            </xpath>
+            <xpath expr="//filter[@name='department']" position='after'>
+                <separator/>
+                <filter string="Remunerativa" name="remunerative" domain="[('leave_category','=','remunerative')]"/>
+                <filter string="No Remunerativa" name="remunerative" domain="[('leave_category','=','non-remunerative')]"/>
+            </xpath>
         </field>
     </record>
 </odoo>

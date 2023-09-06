@@ -9,10 +9,10 @@ class HrLeaveType(models.Model):
     _inherit = "hr.leave.type"
     _description = 'hr.leave.type'
 
-    remunerative_leave_type = fields.Selection(
+    leave_category = fields.Selection(
         selection=[
             ('remunerative', 'Remunerative'),
             ('non-remunerative', 'Non Remunerative')],
-        string="Leave Type",
+        string="Leave Category",
         #default='remunerative',
     )
