@@ -40,6 +40,7 @@
         'views/hr_leave_type_view.xml',
         'views/hr_leave_view.xml',
         'views/hr_leave_report_view.xml',
+        'report/print_employee_badge.xml',
     ],
     'test': [
     ],
