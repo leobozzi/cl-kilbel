@@ -7,62 +7,60 @@
             <xpath expr="//div[@class='page']" position="replace">
                 <t t-foreach="docs" t-as="employee">
                     <div class="d-inline-block">
-                        <table
-                            style="width:243pt; height:153pt; border: 1pt solid black; border-collapse:separate;
-                        border-radius:8pt; margin:5pt">
-                            <td style="width:30%;" valign="center">
-                                <table style="width:77pt; height:150pt">
-                                    <!--
-                                    <tr style="height:30%">
-                                        <td align="center" valign="center">
-                                            <img t-if="employee.company_id.logo"
-                                                t-att-src="image_data_uri(employee.company_id.logo)"
-                                                style="max-height:45pt;max-width:90%"
-                                                alt="Company Logo" />
-                                        </td>
-                                    </tr>
-                                    <tr style="height:70%;">
-                                        <td align="center" valign="center">
-                                            <img
-                                                t-att-src="image_data_uri(employee.avatar_1920)"
-                                                style="max-height:85pt;max-width:90%"
-                                                alt="Employee Image" />
-                                        </td>
-                                    </tr>
-                                    -->
-                                    <tr style="height:100%">
-                                        <td align="center" valign="center">
-                                            <img t-if="employee.company_id.logo"
-                                                t-att-src="image_data_uri(employee.company_id.logo)"
-                                                style="max-height:45pt;max-width:90%;margin-top:60pt;"
-                                                alt="Company Logo" />
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td style="width:70%" valign="center">
-                                <table style="width:155pt; height:85pt">
-                                    <tr>
-                                        <th>
-                                            <div
-                                                style="font-size:15pt; margin-bottom:0pt;margin-top:0pt;"
-                                                align="center">
-                                                <t
-                                                    t-esc="employee.name" />
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!--
-                                    <tr>
-                                        <td>
-                                            <div align="center"
-                                                style="font-size:10pt;margin-bottom:5pt;">
-                                                <t
-                                                    t-esc="employee.job_id.name" />
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    -->
+                        <table class="table"
+                            style="width:243pt; height:153pt; border: 2pt solid black; border-collapse:separate;
+                        border-radius:8pt; margin:5pt;">
+                            <tr>
+                                <td style="width:25%;" align="center">
+                                    <img class="img img-responsive"
+                                        src="/default_kilbel/static/src/img/logo_kilbel_90.jpg"
+                                        style="height:60%;max-width:90%;margin-top:10pt;"
+                                        alt="Company Logo" />
+                                </td>
+                                <td style="width:75%;" align="center">
+                                    <table class="table table-sm" style="border: 0pt;">
+                                        <tr style="border: 0pt;">
+                                            <td>
+                                                <div
+                                                    style="font-size:15pt; font-weight: bold;"
+                                                    align="center">
+                                                    <t
+                                                        t-esc="employee.name" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 0pt;">
+                                            <td>
+                                                <div align="center"
+                                                    style="font-size:12pt;margin-bottom:2pt;">
+                                                    <t
+                                                        t-esc="employee.x_studio_legajo" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 0pt;">
+                                            <td>
+                                                <div align="center"
+                                                    style="font-size:10pt;margin-bottom:5pt;">
+                                                    <t
+                                                        t-esc="employee.first_contract_date"
+                                                        t-options='{"widget": "date","format": "dd-MM-yyyy"}' />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 0pt;">
+                                            <td>
+                                                <div t-if="employee.barcode"
+                                                    t-field="employee.barcode"
+                                                    t-options="{'widget': 'barcode',
+                            'width': 600, 'height': 120, 'img_style':
+                            'max-height:50pt;max-width:100%;', 'img_align': 'center'}" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <!--
                                     <tr>
                                         <td>
                                             <div align="center"
@@ -72,6 +70,7 @@
                                             </div>
                                         </td>
                                     </tr>
+                                    
                                     <tr>
                                         <td>
                                             <div align="center"
@@ -90,8 +89,8 @@
                         'max-height:50pt;max-width:100%;', 'img_align': 'center'}" />
                                         </td>
                                     </tr>
-                                </table>
-                            </td>
+                                    -->
+                            </tr>
                         </table>
                     </div>
                 </t>
