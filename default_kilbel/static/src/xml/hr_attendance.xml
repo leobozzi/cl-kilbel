@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<templates>
+    <t t-extend="HrAttendanceGreetingMessage">
+        <t t-jquery="div.alert.alert-success.h3.mt0" t-operation="replace">
+        </t>
+        <t t-jquery="div.alert.alert-danger.h3.mt0" t-operation="replace">
+        </t>
+    </t>
+</templates>
