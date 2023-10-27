@@ -50,11 +50,13 @@
                                         </tr>
                                         <tr style="border: 0pt;">
                                             <td>
+                                                <!--
                                                 <div t-if="employee.barcode"
                                                     t-field="employee.barcode"
                                                     t-options="{'widget': 'barcode',
                             'width': 600, 'height': 120, 'img_style':
                             'max-height:50pt;max-width:100%;', 'img_align': 'center'}" />
+                                                -->
                                             </td>
                                         </tr>
                                     </table>
