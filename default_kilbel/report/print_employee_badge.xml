@@ -57,6 +57,7 @@
                             'width': 600, 'height': 120, 'img_style':
                             'max-height:50pt;max-width:100%;', 'img_align': 'center'}" />
                                                 -->
+                                                <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=600&amp;height=120'%('EAN13',employee.barcode)" alt="Barcode" style="max-width:100%;max-height:50px"/>
                                             </td>
                                         </tr>
                                     </table>
