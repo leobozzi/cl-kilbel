@@ -19,7 +19,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'kilbel',
-    'version': '15.0.0.3.0',
+    'version': '15.0.0.4.0',
     'license': 'Other OSI approved licence',
     'category': 'Tools',
     'summary': 'Customización Kilbel',
@@ -51,7 +51,7 @@
         ],
     },
     'external_dependencies': {
-        'python': ['reportlab'],
+        'python': ['reportlab', 'rlPyCairo'],
     },
     'test': [
     ],
