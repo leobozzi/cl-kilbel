@@ -50,9 +50,6 @@
             'default_kilbel/static/src/xml/**/*',
         ],
     },
-    'external_dependencies': {
-        'python': ['reportlab', 'rlPyCairo'],
-    },
     'test': [
     ],
     'installable': True,
