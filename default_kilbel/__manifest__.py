@@ -19,7 +19,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'kilbel',
-    'version': '15.0.0.4.0',
+    'version': '15.0.0.5.0',
     'license': 'Other OSI approved licence',
     'category': 'Tools',
     'summary': 'Customización Kilbel',
