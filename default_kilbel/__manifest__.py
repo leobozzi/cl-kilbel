@@ -19,7 +19,7 @@
 # -----------------------------------------------------------------------------------
 {
     'name': 'kilbel',
-    'version': '15.0.0.2.0',
+    'version': '15.0.0.3.0',
     'license': 'Other OSI approved licence',
     'category': 'Tools',
     'summary': 'Customización Kilbel',
@@ -49,6 +49,9 @@
         'web.assets_qweb': [
             'default_kilbel/static/src/xml/**/*',
         ],
+    },
+    'external_dependencies': {
+        'python': ['reportlab'],
     },
     'test': [
     ],
