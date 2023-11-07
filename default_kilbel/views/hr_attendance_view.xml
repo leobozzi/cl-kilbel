@@ -10,6 +10,7 @@
                 <field name="assigned_turn" optional="show" />
                 <field name="branch" optional="show" />
                 <field name="job" optional="show" />
+                <field name="__last_update" optional="hide" />
             </field>
         </field>
     </record>
@@ -25,6 +26,26 @@
                 <field name="price_subtotal" type="measure" />
                 -->
             </pivot>
+        </field>
+    </record>
+
+    <!-- Hr Attendance Search view -->
+    <record model="ir.ui.view" id="custom_hr_attendance_search_view">
+        <field name="name">custom_hr_attendance_search_view</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_id']" position='after'>
+                <field name="assigned_turn" />
+                <field name="branch" />
+                <field name="job" />                
+            </xpath>
+            <xpath expr="//group//filter[@name='groupby_check_out']" position='after'>
+                <separator/>
+                <filter string="Assigned Turn" name="assigned_turn" context="{'group_by': 'assigned_turn'}"/>
+                <filter string="Branch" name="branch" context="{'group_by': 'branch'}"/>
+                <filter string="Job" name="job" context="{'group_by': 'job'}"/>           
+            </xpath>
         </field>
     </record>
 

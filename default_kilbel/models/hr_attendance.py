@@ -13,13 +13,16 @@ class HrAttendance(models.Model):
     branch = fields.Char(
         string="Branch",
         related='employee_id.work_location_id.name',
+        store=True,
     )
     assigned_turn = fields.Char(
         string="Assigned Turn",
-        related='employee_id.resource_calendar_id.name'
+        related='employee_id.resource_calendar_id.name',
+        store=True,
     )
     job = fields.Char(
         string="Job",
-        related='employee_id.job_id.name'
+        related='employee_id.job_id.name',
+        store=True,
     )
     

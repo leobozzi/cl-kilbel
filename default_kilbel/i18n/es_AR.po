@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0+e-20231002\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 17:46+0000\n"
-"PO-Revision-Date: 2023-10-24 17:46+0000\n"
+"POT-Creation-Date: 2023-11-07 11:49+0000\n"
+"PO-Revision-Date: 2023-11-07 11:49+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,11 +17,13 @@ msgstr ""
 
 #. module: default_kilbel
 #: model:ir.model.fields,field_description:default_kilbel.field_hr_attendance__assigned_turn
+#: model_terms:ir.ui.view,arch_db:default_kilbel.custom_hr_attendance_search_view
 msgid "Assigned Turn"
 msgstr "Turno Asignado"
 
 #. module: default_kilbel
 #: model:ir.model.fields,field_description:default_kilbel.field_hr_attendance__branch
+#: model_terms:ir.ui.view,arch_db:default_kilbel.custom_hr_attendance_search_view
 msgid "Branch"
 msgstr "Sucursal"
 
@@ -32,6 +34,7 @@ msgstr ""
 
 #. module: default_kilbel
 #: model:ir.model.fields,field_description:default_kilbel.field_hr_attendance__job
+#: model_terms:ir.ui.view,arch_db:default_kilbel.custom_hr_attendance_search_view
 msgid "Job"
 msgstr "Puesto"
 
