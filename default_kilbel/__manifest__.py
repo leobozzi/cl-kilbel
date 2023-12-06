@@ -49,6 +49,9 @@
         'web.assets_qweb': [
             'default_kilbel/static/src/xml/**/*',
         ],
+        'web.assets_backend':  [
+            '/default_kilbel/static/src/js/user_menu.js',
+        ],
     },
     'test': [
     ],
