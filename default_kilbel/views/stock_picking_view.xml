@@ -26,6 +26,13 @@
         </field>
     </record>
 
+    <record id="custom_action_stock_tree_id" model="ir.actions.act_window.view">
+        <field eval="10" name="sequence"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="stock.vpicktree" />  
+        <field name="act_window_id" ref="stock.action_picking_tree_all" />    
+    </record>
+
     <record id="custom_action_stock_picking_id" model="ir.actions.act_window.view">
         <field eval="100" name="sequence"/>
         <field name="view_mode">pivot</field>
