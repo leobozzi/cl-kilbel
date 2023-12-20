@@ -36,13 +36,14 @@
         'hr_attendance',
         'hr_attendance_reason',
         'hr_attendance_autoclose',
-
     ],
     'data': [
         'views/hr_leave_type_view.xml',
         'views/hr_leave_view.xml',
         'views/hr_leave_report_view.xml',
         'views/hr_attendance_view.xml',
+        'views/hr_personal_equipment_request_view.xml',
+        'views/stock_picking_view.xml',
         'report/print_employee_badge.xml',
     ],
     'assets': {
