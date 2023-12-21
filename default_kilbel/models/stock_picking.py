@@ -12,4 +12,6 @@ class StockPicking(models.Model):
 
     work_location_id = fields.Many2one(
         related='partner_id.employee_ids.work_location_id',
+        string="Sucursal",
+        store=True,
     )
