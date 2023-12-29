@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   
+
+
+	<!-- Resurce Calendar Menu -->
+	<menuitem id="resource_calendar_menu" name="Tiempos de Trabajo" parent="hr.menu_human_resources_configuration" action="resource.action_resource_calendar_form"
+		sequence="10" />
+	
+</odoo>
