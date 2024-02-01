@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Hr Attendance Report Tree view -->
+    <record model="ir.ui.view" id="custom_hr_attendance_report_tree_view">
+        <field name="name">customt_hr_attendance_report_tree_view</field>
+        <field name="model">hr.attendance.report</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="check_in" optional="show" />
+                <field name="day_of_week" optional="show" />
+                <field name="employee_id" optional="show" />
+                <field name="worked_hours" optional="show" />
+                <field name="overtime_hours" optional="show" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="custom_action_tree_attendance_report" model="ir.actions.act_window">
+        <field name="name">Análisis de asistencias detallado</field>
+        <field name="res_model">hr.attendance.report</field>
+        <field name="view_mode">tree,pivot</field>
+        <field name="view_id" ref="custom_hr_attendance_report_tree_view" />   
+        <!-- <field name="context">{
+            'group_by': [],
+            'search_default_department_id': [active_id]}
+        </field>-->
+    </record>  
+    
+    <!-- Hr Attendance Report Menu -->
+	<menuitem id="hr_attendance_report_menu" name="Análisis de asistencias" parent="hr_attendance.menu_hr_attendance_report" action="hr_attendance.hr_attendance_report_action"
+    sequence="10" groups="hr_attendance.group_hr_attendance_user"/>
+    <!-- Hr Attendance Full Report Menu -->
+	<menuitem id="hr_attendance_report_full_menu" name="Análisis de asistencias detallado" parent="hr_attendance.menu_hr_attendance_report" action="custom_action_tree_attendance_report"
+    sequence="20" groups="hr_attendance.group_hr_attendance_user"/>
+    
+
+
+</odoo>

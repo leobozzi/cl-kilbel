@@ -42,6 +42,7 @@
         'views/hr_leave_view.xml',
         'views/hr_leave_report_view.xml',
         'views/hr_attendance_view.xml',
+        'views/hr_attendance_report_view.xml',
         'views/hr_personal_equipment_request_view.xml',
         'views/stock_picking_view.xml',
         'views/hr_resource_calendar_view.xml',

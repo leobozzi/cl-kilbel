@@ -8,3 +8,4 @@ from . import hr_leave_report
 from . import hr_attendance
 from . import hr_personal_equipment_request
 from . import stock_picking
+from . import hr_attendance_report
