@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Res Partner Search view -->
+    <record model="ir.ui.view" id="custom_res_partner_search_view">
+        <field name="name">custom_res_partner_search_view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position='after'>
+                <field name="vat" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
