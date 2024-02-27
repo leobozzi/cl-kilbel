@@ -10,6 +10,10 @@ class HrEmployee(models.Model):
     _inherit = "hr.employee"
     _description = 'hr.employee'
 
+    cashier_number = fields.Char(
+        string="Número de Cajero",
+    )
+
     def write(self, vals):
         res = super(HrEmployee, self).write(vals)
         for rec in self:

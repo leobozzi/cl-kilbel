@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Hr Employee Form view -->
+    <record model="ir.ui.view" id="custom_hr_employee_form_view">
+        <field name="name">customt_hr_employee_form_view</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <field name="work_location_id" position="after">
+                <field name="cashier_number" />
+            </field>
+        </field>
+    </record>
+</odoo>
+    
