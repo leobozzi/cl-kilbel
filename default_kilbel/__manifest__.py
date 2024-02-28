@@ -47,7 +47,7 @@
         'views/stock_picking_view.xml',
         'views/hr_resource_calendar_view.xml',
         'views/res_partner_view.xml',
-        'views/hr_employee_view.xml',
+        #'views/hr_employee_view.xml',
         'report/print_employee_badge.xml',
     ],
     'assets': {
